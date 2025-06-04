@@ -1,0 +1,122 @@
+.about-section {
+  padding: 80px 20px;
+  background: #fff0f6;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: auto;
+  z-index: 1;
+  position: relative;
+}
+
+.about-intro {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.highlight {
+  color: #f30c92;
+}
+
+.about-description {
+  color: #666;
+  font-size: 1.125rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
+}
+
+.about-card {
+  background-color: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.about-card:hover {
+  transform: translateY(-10px);
+}
+
+.about-icon-wrapper {
+  background-color: #fce3ef;
+  color: #f30c92;
+  border-radius: 50%;
+  display: inline-flex;
+  padding: 14px;
+  margin-bottom: 20px;
+}
+
+.about-icon {
+  width: 32px;
+  height: 32px;
+}
+
+.about-card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+.about-card-desc {
+  color: #555;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.fade-in-left {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-heading {
+    font-size: 2rem;
+  }
+
+  .about-description {
+    font-size: 1rem;
+  }
+}

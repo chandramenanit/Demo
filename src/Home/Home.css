@@ -1,0 +1,169 @@
+.hero-section {
+  position: relative;
+  padding: 100px 20px 60px;
+  background: linear-gradient(to right, #f8f9fc, #ffe8f0);
+  overflow: hidden;
+}
+
+.hero-bg-shapes .blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: 0;
+}
+
+.blob1 {
+  width: 250px;
+  height: 250px;
+  background: #f30c92; 
+  top: -50px;
+  left: -100px;
+}
+
+.blob2 {
+  width: 200px;
+  height: 200px;
+  background: #8e0f5c; 
+  bottom: -80px;
+  right: -80px;
+}
+
+.hero-wrapper {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-text-block {
+  flex: 1;
+  padding: 20px;
+}
+
+.main-heading {
+  font-size: 2.75rem;
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.highlight {
+  color: #f30c92;
+}
+
+.subheading {
+  font-size: 1.125rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.primary-btn,
+.secondary-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+}
+
+.primary-btn {
+  background-color: #f30c92; 
+  color: white;
+}
+
+.primary-btn:hover {
+  background-color: #c10975; 
+}
+
+.secondary-btn {
+  background-color: transparent;
+  color: #f30c92; 
+  border: 2px solid #f30c92;
+}
+
+.secondary-btn:hover {
+  background-color: #f30c92;
+  color: white;
+}
+
+.icon {
+  margin-left: 8px;
+}
+
+/* Image Block */
+.hero-image-block {
+  flex: 1;
+  padding: 20px;
+  text-align: center;
+}
+
+.hero-main-image {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Animations */
+.fade-in-left {
+  animation: fadeInLeft 1s ease-in-out;
+}
+
+.fade-in-right {
+  animation: fadeInRight 1s ease-in-out;
+}
+
+@keyframes fadeInLeft {
+  from {
+    transform: translateX(-50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    transform: translateX(50px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-wrapper {
+    flex-direction: column-reverse;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .subheading,
+  .action-buttons {
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-image-block {
+    margin-bottom: 20px;
+  }
+}

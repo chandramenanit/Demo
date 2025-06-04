@@ -1,0 +1,144 @@
+.header button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.header {
+  width: 100%;
+  background-color: #f30c92;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo-icon img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.logo-text {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-left: 0.5rem;
+  color: #ffffff;
+}
+
+.nav-desktop {
+  display: flex;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link {
+  font-size: 1rem;
+  color: #ffffff;
+  transition: color 0.2s ease-in-out;
+  text-decoration: none; /* add this for consistency */
+}
+
+.nav-link:hover {
+  color: #000000;
+}
+
+.nav-link-active {
+  color: #0070f3;
+  border-bottom: 2px solid #0070f3;
+  padding-bottom: 2px;
+}
+
+.nav-mobile {
+  display: none;
+}
+
+.mobile-menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.25rem;
+}
+
+.menu-icon {
+  width: 24px;
+  height: 24px;
+  color: #ffffff; /* Changed to white so it's visible on pink background */
+  transition: color 0.3s ease;
+}
+
+.mobile-menu {
+  position: absolute;
+  top: 64px;
+  left: 0;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999; /* added to keep it above other content */
+}
+
+.mobile-menu-content {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.mobile-nav-link {
+  font-size: 1.125rem;
+  color: #555555;
+  text-align: left;
+  width: 100%;
+  text-decoration: none; /* added for links */
+  transition: color 0.2s ease-in-out;
+}
+
+.mobile-nav-link:hover {
+  color: #000000;
+}
+
+/* Responsive styles */
+
+@media (max-width: 768px) {
+  .nav-desktop {
+    display: none;
+  }
+  .nav-mobile {
+    display: block;
+  }
+}
+
+@media (min-width: 769px) {
+  .mobile-menu {
+    display: none;
+  }
+}

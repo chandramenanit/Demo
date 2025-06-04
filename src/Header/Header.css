@@ -9,7 +9,7 @@
 
 .header {
   width: 100%;
-  background-color: #f30c92;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   position: fixed;
   top: 0;
@@ -60,18 +60,18 @@
 
 .nav-link {
   font-size: 1rem;
-  color: #ffffff;
+  color: #f1f1f1;
   transition: color 0.2s ease-in-out;
-  text-decoration: none; /* add this for consistency */
+  text-decoration: none;
 }
 
 .nav-link:hover {
-  color: #000000;
+  color: #ffcc00;
 }
 
 .nav-link-active {
-  color: #0070f3;
-  border-bottom: 2px solid #0070f3;
+  color: #00e6e6;
+  border-bottom: 2px solid #00e6e6;
   padding-bottom: 2px;
 }
 
@@ -92,7 +92,7 @@
 .menu-icon {
   width: 24px;
   height: 24px;
-  color: #ffffff; /* Changed to white so it's visible on pink background */
+  color: #ffffff;
   transition: color 0.3s ease;
 }
 
@@ -103,7 +103,7 @@
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  z-index: 999; /* added to keep it above other content */
+  z-index: 999;
 }
 
 .mobile-menu-content {
@@ -115,23 +115,23 @@
 
 .mobile-nav-link {
   font-size: 1.125rem;
-  color: #555555;
+  color: #333333;
   text-align: left;
   width: 100%;
-  text-decoration: none; /* added for links */
+  text-decoration: none;
   transition: color 0.2s ease-in-out;
 }
 
 .mobile-nav-link:hover {
-  color: #000000;
+  color: #764ba2;
 }
 
 /* Responsive styles */
-
 @media (max-width: 768px) {
   .nav-desktop {
     display: none;
   }
+
   .nav-mobile {
     display: block;
   }
